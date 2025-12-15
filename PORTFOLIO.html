@@ -5,54 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The First Portfolio</title>
         
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background: #76aadf;
-            }
-
-            h1{
-                text-align: center;
-            }
-
-            .container {
-                max-width: 500px;
-                margin: 4px auto;
-                background: #fff;
-                padding: 25px;
-                border-radius: 8px;
-            }
-
-            input {
-                width: 20%;
-                padding: 10px;
-                margin-bottom: 10px;
-                margin-left: 20px;
-                border-radius: 15px;
-            }
-
-            button {
-                width: 100px;
-                height: 30px;
-                background-color: blue;
-                color: white;
-                border-radius: 10px;
-                margin-left: 100px;
-            }
-            textarea {
-                height: 100%;
-                width: 30%;
-                margin-left: 20px;
-                border-radius: 15px;
-            }
-            #output {
-                margin-top: 15px;
-                padding: 15px;
-                border: 1px solid #32daf0;
-                background: #eef6ff;
-                border-radius: 5px;
-            }
-        </style>
+        <link rel="stylesheet" href="portStyle.css">
     </head>
     <body>
         <h1>Eyuel Ashenafi</h1>
@@ -91,27 +44,6 @@
 
         <div id="output"></div>
 
-        <script>
-            const form = document.getElementById("portfolioForm");
-            const output = document.getElementById("output");
-
-            form.addEventListener("submit", function (e) {
-            e.preventDefault(); 
-            const name = document.getElementById("fname").value;
-            const id = document.getElementById("id").value;
-            const dept = document.getElementById("department").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            output.innerHTML = `
-                <h3>Submitted Information</h3>
-                <p><strong>Full Name:</strong> ${name}</p>
-                <p><strong>ID:</strong> ${id}</p>
-                <p><strong>Department:</strong> ${dept}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                 <p><strong>Message:</strong> ${message}</p>
-            `;
-            });
-        </script>
+        <script src="portScript.js"></script>
     </body>
 </html>
