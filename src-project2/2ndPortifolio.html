@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="src-project2/styles.css">
+    <style>
+        body{
+            font-family: arial;
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+        }
+        header{
+            text-align: center;
+            padding: 20px;
+            background-color: #66e485;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eyuel Ashenafi</h1>
+        <p class="role">Software Engineering Student</p>
+    </header>
+
+    <section class="profile">
+        <img src="src-project2/images (2).jpg" alt="Eyuel Ashenafi's Profile Picture">
+        <div class="bio">
+            <p>I am a passionate developer focusing on building clean, accessible web interfaces...</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="grid-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">UI Design</div>
+        </div>
+    </section>
+
+    <br>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <form id="portfolioForm" class="contact-form">
+            <label for="fname" >Full name:</label>
+            <br>
+
+            <input type="text" id="fname" name="fname">
+            <br>
+
+            <label for="id">ID:</label><br>
+
+            <input type="id" id="id" name="id"><br>
+
+            <label for="department">Department:</label><br>
+
+            <input type="text" id="department" name="department"><br>
+
+            <label for="email">E-mail:</label><br>
+
+            <input type="text" id="email" name="email"><br>
+
+            <label for="message">Message:</label><br>
+
+            <textarea id="message" rows="4" cols="30"></textarea> <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    </body>
+</html>
